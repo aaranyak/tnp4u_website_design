@@ -29,9 +29,11 @@
                 var activeSlide = "slide1"
                 function switchSlide(number) {
                     var slide = document.getElementById("slide" + number.toString());
-                    slide.style.opacity = "100%";
+                    slide.style.visibility =  "visible";
+                    slide.style.opacity = "100%"
                     var previous = document.getElementById(activeSlide)
-                    previous.style.opacity = "0%";
+                    previous.style.visibility = "hidden";
+                    previous.style.opacity = "0%"
                     activeSlide = "slide" + number.toString()
                 }
             </script>
@@ -41,26 +43,26 @@
                     <iframe width="424" height="238" src="https://www.youtube.com/embed/GavEeQHWF_U" title="Inside NEXT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </span>
             </div>
-            <div class="tsSlide" id="slide2" style="opacity: 0%;">
+            <div class="tsSlide" id="slide2" style="visibility: hidden;">
                 <span class="slogan2">The Natural Path For You is a career path in which you can be your Natural Self and Capitalize on your Strengths!</span>
                 <span class="titleMeme">
                     <img src="/assets/images/be_yourself.png" alt="">
                 </span>
             </div>
-            <div class="tsSlide" id="slide3" style="opacity: 0%;">
+            <div class="tsSlide" id="slide3" style="visibility: hidden;">
                 <span class="shortTit3">Consultation:</span>
                 <span class="shortDesc3">Children and Adults</span>
                 <span class="titleFamily">
                     <img src="/assets/images/family.png" alt="">
                 </span>
             </div>
-            <div class="tsSlide" id="slide4" style="opacity: 0%;">
+            <div class="tsSlide" id="slide4" style="visibility: hidden;">
                 <span class="shortDesc4">Inspired by the Japanese concept “Ikigai”</span>
                 <span class="titleFamily">
                     <img src="/assets/images/ikigai.png" alt="">
                 </span>
             </div>
-            <div class="tsSlide" id="slide5" style="opacity: 0%;">
+            <div class="tsSlide" id="slide5" style="visibility: hidden;">
                 <span class="shortTit5">Follow us on:</span>
                 <span class="shortDesc5"><a href="https://www.facebook.com/thenaturalpath4you">www.facebook.com/
                     thenaturalpath4you</a></span>
