@@ -1,0 +1,27 @@
+/*Styles for the navigation bar on non-logged in pages */
+.mainHeader {
+    height: 75px;
+    width: 100%;
+    background: #E8CDAD;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    font-size: 0px;
+    position: absolute;
+}
+/* Style for a navbar button */
+.mainHeader button {
+    border: none;
+    border-radius: 0%;
+    height: 75px;
+    width: 175px;
+    font-size: 37px;
+    font-family: 'PT Serif';
+    font-weight: normal;
+    background-color: #E8CDAD;
+    color: #332020;
+    transition: 200ms;
+    margin: 0px;
+}
+/* Add Hover Effect */
+.mainHeader button:hover {
+    background-color: #947171;
+}
