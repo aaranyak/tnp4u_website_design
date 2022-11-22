@@ -3,3 +3,144 @@
     width: 100%;
     height: 500px;
 }
+.tsButtons {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 450px;
+}
+/* Css for buttons in the title screen */
+.tsButtons input{
+    appearance: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #332020;
+    transition: 300ms;
+}
+.tsButtons input:hover{
+    appearance: none;
+    background-color: #33202020;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #5c3b3b;
+}
+.tsButtons input:checked{
+    appearance: none;
+    background-color: #332020;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #332020;
+}
+
+/* Css for the title slides */
+.title1 {
+    width: 50%;
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 100px;
+    color: #332020;
+    font-weight: bold;
+}
+.titleVideo {
+    position: absolute;
+    right: 100px;
+    top: 170px;
+
+}
+.tsSlide {
+    transition: 300ms
+}
+.titleMeme img {
+    position: absolute;
+    height: 300px;
+    top: 150px;
+    left: 100px;
+}
+.slogan2 {
+    width: 70%;
+    top: 100px;
+    right: 40px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 60px;
+    color: #332020;
+    font-weight: normal;
+    text-align: right;
+}
+
+.titleFamily img {
+    position: absolute;
+    height: 300px;
+    top: 150px;
+    left: 100px;
+}
+
+.shortTit3 {
+    width: 70%;
+    top: 200px;
+    right: 150px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 80px;
+    color: #332020;
+    font-weight: bold;
+    text-align: right;
+}
+.shortDesc3 {
+    width: 70%;
+    top: 300px;
+    right: 50px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 70px;
+    color: #332020;
+    font-weight: normal;
+    text-align: right;
+}
+.shortDesc4 {
+    width: 50%;
+    top: 130px;
+    right: 50px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 80px;
+    color: #332020;
+    font-weight: normal;
+    text-align: right;
+}
+.shortTit5 {
+    width: 70%;
+    top: 150px;
+    right: 150px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 80px;
+    color: #332020;
+    font-weight: bold;
+    text-align: right;
+}
+.shortDesc5 {
+    width: 70%;
+    top: 250px;
+    right: 50px;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    display: block;
+    font-family: "PT Serif";
+    font-size: 70px;
+    color: #332020;
+    font-weight: normal;
+    text-align: right;
+}

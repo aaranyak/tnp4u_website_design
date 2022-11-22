@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--IDK what this does it came in the template-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Loading the font from google fonts.-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
-    <!--Include stylesheets-->
     <link rel="stylesheet" href="styles/headers.css">
     <link rel="stylesheet" href="styles/main.css">
-    <!--Title-->
     <title>The Natural Path For You</title>
 </head>
 <body style="margin: 0px;">
-    <!--Header contains navigation bar-->
     <header>
         <div class="mainHeader">
-            <!--Buttons leading to other pages-->
             <span>
                 <button>Home</button>
                 <button>About</button>
                 <button>Reviews</button>
             </span>
-            <!--Login-Signup buttons-->
             <span style="position: absolute; right: 0;">
                 <button style="font-weight: bold;">Log In</button>
                 <button style="font-weight: bold;">Sign Up</button>
@@ -31,7 +24,60 @@
         </div>
     </header>
     <div class="titleScreen">
-        
+        <div id="tsContent">
+            <script>
+                var activeSlide = "slide1"
+                function switchSlide(number) {
+                    var slide = document.getElementById("slide" + number.toString());
+                    slide.style.opacity = "100%";
+                    var previous = document.getElementById(activeSlide)
+                    previous.style.opacity = "0%";
+                    activeSlide = "slide" + number.toString()
+                }
+            </script>
+            <div class="tsSlide" id="slide1">
+                <span class="title1">The Natural Path For You</span>
+                <span class="titleVideo">
+                    <iframe width="424" height="238" src="https://www.youtube.com/embed/GavEeQHWF_U" title="Inside NEXT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </span>
+            </div>
+            <div class="tsSlide" id="slide2" style="opacity: 0%;">
+                <span class="slogan2">The Natural Path For You is a career path in which you can be your Natural Self and Capitalize on your Strengths!</span>
+                <span class="titleMeme">
+                    <img src="/assets/images/be_yourself.png" alt="">
+                </span>
+            </div>
+            <div class="tsSlide" id="slide3" style="opacity: 0%;">
+                <span class="shortTit3">Consultation:</span>
+                <span class="shortDesc3">Children and Adults</span>
+                <span class="titleFamily">
+                    <img src="/assets/images/family.png" alt="">
+                </span>
+            </div>
+            <div class="tsSlide" id="slide4" style="opacity: 0%;">
+                <span class="shortDesc4">Inspired by the Japanese concept “Ikigai”</span>
+                <span class="titleFamily">
+                    <img src="/assets/images/ikigai.png" alt="">
+                </span>
+            </div>
+            <div class="tsSlide" id="slide5" style="opacity: 0%;">
+                <span class="shortTit5">Follow us on:</span>
+                <span class="shortDesc5"><a href="https://www.facebook.com/thenaturalpath4you">www.facebook.com/
+                    thenaturalpath4you</a></span>
+                <span class="titleFamily">
+                    <img src="/assets/images/facebook.png" alt="">
+                </span>
+            </div>
+        </div>
+        <div id="tsButtons" class="tsButtons">
+            <form>
+                <input type="radio" id="tsButton1" value="1" name="content" checked="true" onclick="switchSlide(1);">
+                <input type="radio" id="tsButton2" value="2" name="content" onclick="switchSlide(2);">
+                <input type="radio" id="tsButton3" value="3" name="content" onclick="switchSlide(3);">
+                <input type="radio" id="tsButton4" value="4" name="content" onclick="switchSlide(4);">
+                <input type="radio" id="tsButton5" value="5" name="content" onclick="switchSlide(5);">
+            </form>
+        </div>
     </div>
 </body>
 </html>
