@@ -54,7 +54,12 @@
 
 }
 .tsSlide {
-    transition: 300ms
+    transition: 300ms;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 .titleMeme img {
     position: absolute;
@@ -97,7 +102,7 @@
 .shortDesc3 {
     width: 70%;
     top: 300px;
-    right: 50px;
+    right:.50px;
     position: absolute;
     display: block;
     font-family: "PT Serif";
@@ -143,4 +148,28 @@
     color: #332020;
     font-weight: normal;
     text-align: right;
+}
+
+/* Css for the first description */
+.introDescription {
+    height: 300px;
+    width: 100%;
+}
+.descVideo {
+    left: 50px;
+    top: 540px;
+    position: absolute;
+}
+.descShort1 {
+    position: absolute;
+    top: 530px;
+    right: 50px;
+    display: block;
+    width: 600px;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'PT Serif';
+}
+.divider1 {
+    
 }
