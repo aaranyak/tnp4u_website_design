@@ -1,0 +1,78 @@
+/* Css for the page title */
+.titleScreen {
+    background-color: #E8CDAD;
+    width: 100%;
+    height: 500px;
+}
+.titleScreen span {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    font-size: 120px;;
+    font-family: 'PT Serif';
+    color: #332020;
+    font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Css for the main description */
+.mainDescription {
+    position: relative;
+    padding-top: 50px;
+    font-size: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'PT Serif';
+
+}
+.mdDivider {
+    margin-left: 80px;
+    margin-right: 80px;
+    color: #747474;
+    border-radius: 40%;
+    border-width: 1px;
+    margin-bottom: 30px;
+}
+
+/* Css for the course details */
+/* Css for the headings */
+.sdTitle {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'PT Serif';
+    font-weight: bolder;
+    color: #332020;
+}
+.sdSubtitle {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'PT Serif';
+}
+.sdHeading {
+    margin-bottom: 30px;
+}
+
+.sdcUl li{
+    font-size: 25px;
+}
+.sdcUl li::marker {
+    content: "• ";
+    font-size: 40px;
+    color: #332020;
+}
+
+.sdContent {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.detDivider {
+    margin: 50px;
+    color: #747474;
+    border-radius: 40%;
+}

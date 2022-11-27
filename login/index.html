@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <link rel="stylesheet" href="/styles/login.css">
+    <script src="/scripts/simpleTasks/manageLoginFields.js"></script>
+    <script src="/scripts/auth/login.js"></script>
+    <title>Log In to TNP4U</title>
+</head>
+<body style="margin: 0px;">
+    <form id="inputForm">
+        <div></div>
+        <input type="email" name="email" id="eml" class="inputField" required onfocusout="updateTextSize();" onfocus="focusText('emlLabel');">
+        <label for="eml" id="emlLabel">Email</label>
+        <input type="password" name="password" id="psw" class="inputField" required onfocusout="updateTextSize();" onfocus="focusText('pswLabel')">
+        <label for="psw" id="pswLabel">Password</label>
+        <button class="normalButton">Log In</button>
+    </form>
+</body>
+</html>
