@@ -1,0 +1,48 @@
+/* Css for input fields */
+input {
+    border: 0;
+    outline: 0;    
+    border-bottom: 2px solid black;
+    height: 30px;
+    width: 100%;
+    font-family: 'PT Serif';
+    padding: 0;
+    vertical-align: bottom;
+    transition: 200ms;
+}
+label {
+    position: relative;
+    font-family: 'PT Serif';
+    top: -30px;
+    left: 5px;
+    font-size: 20px;
+    transition: 200ms;
+    vertical-align: top;
+}
+input:focus {
+    border-color: #947171;
+}
+form {
+    padding: 20px;
+}
+/* Css for button */
+.normalButton {
+    position: absolute;
+    top: 140px;
+    right: 40px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    font-family: 'PT Serif';
+    font-weight: normal;
+    background-color: #E8CDAD;
+    color: #332020;
+    transition: 200ms;
+    margin: 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 50%);
+}
+.normalButton:hover {
+    background-color: #947171;
+}
