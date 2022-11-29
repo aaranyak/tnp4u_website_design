@@ -11,6 +11,9 @@ input {
     transition: 200ms;
 }
 label {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     position: relative;
     font-family: 'PT Serif';
     top: -30px;
@@ -45,4 +48,37 @@ form {
 }
 .normalButton:hover {
     background-color: #947171;
+}
+.googleButton {
+    position: absolute;
+    height: 50px;
+    top: 200px;
+    border: none;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    font-size: 20px;
+    font-family: 'PT Serif';
+    font-weight: normal;
+    background-color: #E8CDAD;
+    color: #332020;
+    transition: 200ms;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 50%);
+}
+.googleButton:hover {
+    background-color: #947171;
+}
+
+.googleButton img {
+    position: relative;
+    right: -10px;
+}
+
+.showPassword {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 73px;
+    color: grey;
 }

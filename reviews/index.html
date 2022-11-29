@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <link rel="stylesheet" href="/styles/headers.css">
+    <link rel="stylesheet" href="/styles/reviews.css">
+    <script src="/scripts/auth/onRefreshFunction.js" type="module"></script>
+    <script src="/scripts/specificActions/redirectOnAuthUpdate.js" type="module"></script>
+    <script src="/scripts/simpleTasks/manageReviewFields.js"></script>
+    <title>TNP4U - Reviews</title>
+</head>
+<body style="margin: 0px;">
+        <div class="mainHeader">
+            <span>
+                <a href="/"><button>Home</button></a>
+                <a href="/about/"><button>About</button></a>
+                <a href="/reviews/"><button>Reviews</button></a>
+            </span>
+            <span style="position: absolute; right: 0;">
+                <button style="font-weight: bold;" onclick="window.open('/login/', 'login', 'width=300, height=300');">Log In</button>
+                <button style="font-weight: bold;" onclick="window.open('/signup/', 'signup', 'width=300, height=350');">Sign Up</button>
+            </span>
+        </div>
+    </header>
+    <div class="titleScreen">
+        <span>Reviews</span>
+    </div>
+    <div class="reviewCompose">
+        <div class="rcTextInputs">
+            <span class="rcnameInput">
+                <label for="nameInput" id="nameLabel">Name</label>
+                <input type="text" name="nameInput" id="nameInput" onfocusout="updateTextSize();" onfocus="focusText('nameLabel');">
+            </span>
+            <span class="rcTitleInput">
+                <label for="titleInput" id="titleLabel">Title</label>
+            </span>
+            <input type="text" name="titleInput" id="titleInput" onfocusout="updateTextSize();" onfocus="focusText('titleLabel');">
+        </div>
+        <div class="ratingSection">
+            <button></button>
+        </div>
+    </div>
+</body>
+</html>

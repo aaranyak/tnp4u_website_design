@@ -1,5 +1,5 @@
 import {app} from "/scripts/firebaseInit.js";
-import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firbase-auth.js";
+import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
 const auth = getAuth(app);
 

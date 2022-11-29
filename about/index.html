@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
     <link rel="stylesheet" href="/styles/headers.css">
     <link rel="stylesheet" href="/styles/about.css">
+    <script src="/scripts/auth/onRefreshFunction.js" type="module"></script>
+    <script src="/scripts/specificActions/redirectOnAuthUpdate.js" type="module"></script>
     <title>TNP4U - About Us</title>
 </head>
 <body style="margin: 0px;">
-    <header>
         <div class="mainHeader">
             <span>
                 <a href="/"><button>Home</button></a>
@@ -18,8 +19,8 @@
                 <a href="/reviews/"><button>Reviews</button></a>
             </span>
             <span style="position: absolute; right: 0;">
-                <button style="font-weight: bold;" onclick="window.open('/login/', 'login', 'width=300, height=400');">Log In</button>
-                <button style="font-weight: bold;">Sign Up</button>
+                <button style="font-weight: bold;" onclick="window.open('/login/', 'login', 'width=300, height=300');">Log In</button>
+                <button style="font-weight: bold;" onclick="window.open('/signup/', 'signup', 'width=300, height=350');">Sign Up</button>
             </span>
         </div>
     </header>

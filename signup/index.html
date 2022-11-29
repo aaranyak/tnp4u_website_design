@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
     <link rel="stylesheet" href="/styles/login.css">
     <script src="/scripts/simpleTasks/manageLoginFields.js" ></script>
-    <script src="/scripts/auth/login.js" type="module"></script>
-    <script src="/scripts/specificActions/loginPageAction.js"></script>
+    <script src="/scripts/auth/signup.js" type="module"></script>
+    <script src="/scripts/specificActions/signupPageAction.js"></script>
     <script src="/scripts/auth/onRefreshFunction.js" type="module"></script>
     <script src="/scripts/auth/googleLogin.js" type="module"></script>
     <script src="/scripts/db/createUserDocument.js" type="module"></script>
     <script src="/scripts/specificActions/googleLoginAction.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <title>Log In to TNP4U</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Create account for TNP4U</title>
 </head>
 <body style="margin: 0px;">
     <script>
@@ -43,9 +44,11 @@
         <label for="eml" id="emlLabel">Email</label>
         <input type="password" name="password" id="psw" class="inputField" required onfocusout="updateTextSize();" onfocus="focusText('pswLabel')" autocomplete="current-password">
         <label for="psw" id="pswLabel">Password</label>
+        <input type="text" name="name" id="name" class="inputField" required onfocusout="updateTextSize();" onfocus="focusText('nameLabel')">
+        <label for="name" id="nameLabel">Username</label>
     </form>
     <button class="showPassword" id="showButton" onclick="showPasswordAction();"><span class="material-symbols-outlined">visibility_off</span></button>
-    <button class="normalButton" onclick="loginWithEmailAction();">Log In</button>
-    <button class="googleButton" onclick="logInWithGoogleAction();"><span>Log In With Google</span> <img src="/assets/icons/google.svg" alt=""></button>
+    <button class="normalButton" style="top: 200px;" onclick="signupWithEmailAction();">Sign Up</button>
+    <button class="googleButton" style="top: 270px;" onclick="logInWithGoogleAction();"><span>Sign Up with Google</span> <img src="/assets/icons/google.svg" alt=""></button>
 </body>
 </html>
