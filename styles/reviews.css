@@ -20,6 +20,12 @@
 }
 
 /* Css for writing reviews */
+.reviewCompose {
+    height: 730px;
+}
+.rcTextInputs {
+    height: 90px;
+}
 input {
     z-index: 1;
     border: 0;
@@ -67,13 +73,145 @@ input:focus {
 }
 .ratingSection {
     position: absolute;
-    top: 580px;
+    top: 600px;
     left: 50px;
     height: 50px;
-    width: 300px;
+    width: 500px;
 }
 .ratingSection button {
     background-color: transparent;
-    
-    background-image: url("/assets/icons/");
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+.ratingSection img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#rb0 {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    position: relative;
+    top: -15px;
+    font-family: 'PT Serif';
+}
+
+.reviewContent {
+    position: absolute;
+    top: 671px;
+    width: 100%;
+    height: 440px;
+}
+.reviewContentBox {
+    position: relative;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.473);
+    width: calc(100% - 80px);
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.rcbTitle {
+    position: relative;
+    text-align: center;
+    top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'PT Serif';
+}
+.reviewContentInput {
+    position: relative;
+    top: 20px;
+    width: calc(100% - 50px);
+    resize: none;
+    left: 20px;
+    height: 300px;
+    border: none;
+    outline: 0px;
+    font-size: 25px;
+    font-family: 'PT Serif';
+}
+.submitReview {
+    border: none;
+    border-radius: 10px;
+    font-family: 'PT Serif';
+    font-weight: normal;
+    background-color: #E8CDAD;
+    color: #332020;
+    transition: 200ms;
+    margin: 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 50%);
+}
+.submitReview:hover {
+    background-color: #947171;
+}
+.submitReview {
+    position: absolute;
+    top: 1130px;
+    height: 60px;
+    width: calc(100% - 100px);
+    left: 50px;
+    font-size: 30px;
+}
+
+/* Feedback Section */
+.reviewsSection {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.reviewContainer {
+    height: 400px;
+    padding: 50px;
+    width: 100%;
+}
+.reviewBox {
+    width: 700px;
+    height: 100%;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.473);
+    margin: 0;
+}
+.rTitleSection {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+    font-family: 'PT Serif';
+}
+.rRatingSection {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    font-family: 'PT Serif';
+    font-size: 20px;
+}
+.rRatingSection img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+.rRatingSection span {
+    margin-right: 30px;
+}
+.reviewBox hr {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    border-radius: 50%;
+}
+.review {
+    position: relative;
+    padding: 30px;
+    padding-top: 20px;
+    width: 640px;
+    height: 241px;
+    font-family: 'PT Serif';
+    font-size: 20px;
+    line-height: 23px;
 }

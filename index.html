@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="/styles/main.css">
     <script src="/scripts/auth/onRefreshFunction.js" type="module"></script>
     <script src="/scripts/specificActions/redirectOnAuthUpdate.js" type="module"></script>
+    <script src="/scripts/pageControllers/feedbackPreview.js" type="module"></script>
     <title>The Natural Path For You</title>
 </head>
-<body style="margin: 0px;">
+<body style="margin: 0px; overflow-x: hidden;">
     <header>
         <div class="mainHeader">
             <span>
@@ -100,7 +101,19 @@
     </div>
     <hr class="divSplit1"> <hr class="divSplit2">
     <div class="feedbackPreview">
-        <h3 style="top: 50%; position: relative;">Placeholder for the feedback preview section.</h3>
+        <table>
+            <tr id="feedbackPreview">
+                
+            </tr>
+        </table>
+    </div>
+    <div style="overflow: hidden; height: 450px; position: absolute; width: 351px; top: 1090px;">
+        <div class="sideShadow1"></div>
+        <div class="sideShadow1"></div>
+    </div>
+    <div style="overflow: hidden; height: 450px; position: absolute; width: 351px; top: 1090px; right: 0;">
+        <div class="sideShadow2"></div>
+        <div class="sideShadow2"></div>
     </div>
     <div class="facebookLink">
         <span>

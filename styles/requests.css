@@ -1,0 +1,11 @@
+#background1 {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 1500px;
+}
+#background2 {
+    position: absolute;
+    height: 1500px;
+    right: 0px;
+}

@@ -10,6 +10,10 @@
     <script src="/scripts/auth/onRefreshFunction.js" type="module"></script>
     <script src="/scripts/specificActions/redirectOnAuthUpdate.js" type="module"></script>
     <script src="/scripts/simpleTasks/manageReviewFields.js"></script>
+    <script src="/scripts/simpleTasks/manageReviewRating.js"></script>
+    <script src="/scripts/db/getReviews.js" type="module"></script>
+    <script src="/scripts/specificActions/addReviewAction.js"></script>
+    <script src="/scripts/pageControllers/feedbackGenerator.js" type="module"></script>
     <title>TNP4U - Reviews</title>
 </head>
 <body style="margin: 0px;">
@@ -39,9 +43,24 @@
             </span>
             <input type="text" name="titleInput" id="titleInput" onfocusout="updateTextSize();" onfocus="focusText('titleLabel');">
         </div>
-        <div class="ratingSection">
-            <button></button>
+        <div class="ratingSection" id="ratingButtons">
+            <button id="rb0" onclick="updateRating(0);">Rating: </button>
+            <button id="rb1" onclick="updateRating(1);"><img src="/assets/icons/star_off.svg" alt=""></button>
+            <button id="rb2" onclick="updateRating(2);"><img src="/assets/icons/star_off.svg" alt=""></button>
+            <button id="rb3" onclick="updateRating(3);"><img src="/assets/icons/star_off.svg" alt=""></button>
+            <button id="rb4" onclick="updateRating(4);"><img src="/assets/icons/star_off.svg" alt=""></button>
+            <button id="rb5" onclick="updateRating(5)"><img src="/assets/icons/star_off.svg" alt=""></button>
         </div>
+        <div class="reviewContent">
+            <div class="reviewContentBox">
+                <div class="rcbTitle">Write Review Here:</div>
+                <textarea name="reviewContent" id="reviewContent" class="reviewContentInput"></textarea>
+            </div>
+        </div>
+        <button class="submitReview" onclick="addReviewAction();">Submit Review</button>
+    </div>
+    <div class="reviewsSection" id="reviewsSection">
+
     </div>
 </body>
 </html>

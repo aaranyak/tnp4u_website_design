@@ -1,0 +1,3 @@
+function signOutAction() {
+    window.logOut();
+}

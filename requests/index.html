@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/headers.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <script src="/scripts/auth/signout.js" type="module"></script>
+    <script src="/scripts/specificActions/signOutAction.js"></script>
+    <script src="/scripts/specificActions/signOutOnAuthUpdate.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/requests.css">
+    <title>Send Request</title>
 </head>
-<body>
-    <h1>Requests Page</h1>
+<body style="margin: 0px; overflow-x: hidden;">
+    <header>
+        <div class="mainHeader">
+            <span>
+                <a href="/requests/"><button>Requests</button></a>
+                <a href="/tasks/"><button>Tasks</button></a>
+                <a href="/chat/"><button>Chat</button></a>
+            </span>
+            <span style="position: absolute; right: 0;">
+                <button style="font-weight: bold;" onclick="signOutAction();">Sign Out</button>
+            </span>
+        </div>
+    </header>
+    <div class="backgrounds">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background1">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background2">
+    </div>
+    <div class="qForm">
+        
+    </div>
 </body>
 </html>
