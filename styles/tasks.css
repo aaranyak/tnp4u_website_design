@@ -1,0 +1,117 @@
+#background1 {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 1500px;
+}
+#background2 {
+    position: absolute;
+    height: 1500px;
+    right: 0px;
+}
+.title {
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    align-content: center;
+}
+.title h1 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 0px;
+    text-align: center;
+    color: #332020;
+}
+.title h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+}
+.posts {
+    position: absolute;
+    bottom: calc(100% - 1460px);
+    width: 100%;
+    height: auto;
+} 
+.postContainer {
+    width: 100%;
+    position: relative;
+    height: 350px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.post {
+    background-color: #E8CDAD;
+    width: 600px;
+    height: 350px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.548);
+    position: relative;
+    left: calc(50% - 300px);
+}
+.postTitle {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'PT Serif';
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.post hr {
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 40%;
+}
+.postDescription {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    font-family: 'PT Serif';
+    font-size: 20px;
+    height: 0px;
+}
+.content {
+    position: relative;
+    left: 250px;
+    top: 30px;
+}
+.sheetsPage {
+    height: 200px;
+    width: 300px;
+    background-image: 
+        radial-gradient(115.26% 115.26% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+        url("/assets/backgrounds/sheetBackground.png");
+        background-size: cover;
+    transition-duration: 300ms;
+}
+.sheetsPage img {
+    position: relative;
+    height: 100px;
+    left: 100px;
+    top: 50px;
+    transition-duration: 300ms;
+
+}
+.sheetsPage:hover {
+    height: 200px;
+    width: 300px;
+    background-image: 
+    radial-gradient(115.26% 115.26% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%),        url("/assets/backgrounds/sheetBackground.png");
+        background-size: cover;
+}
+.sheetsPage:hover img {
+    position: relative;
+    height: 150px;
+    left: 75px;
+    top: 30px
+}

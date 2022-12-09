@@ -10,7 +10,13 @@
     <script src="/scripts/specificActions/signOutAction.js"></script>
     <script src="/scripts/specificActions/signOutOnAuthUpdate.js" type="module"></script>
     <link rel="stylesheet" href="/styles/requests.css">
-    <title>Send Request</title>
+    <script src="/scripts/simpleTasks/manageRequestFields.js"></script>
+    <script src="/scripts/db/sendRequest.js" type="module"></script>
+    <script src="/scripts/specificActions/sendRequestAction.js"></script>
+    <script src="/scripts/db/getRequestUserStatus.js" type="module"></script>
+    <script src="/scripts/pageControllers/requestStateUpdater.js" type="module"></script>
+    <script src="/scripts/analytics/analyticsDefault.js" type="module"></script>
+    <title>TNP4U - Request</title>
 </head>
 <body style="margin: 0px; overflow-x: hidden;">
     <header>
@@ -29,8 +35,31 @@
         <img src="/assets/backgrounds/pageDecoration.svg" id="background1">
         <img src="/assets/backgrounds/pageDecoration.svg" id="background2">
     </div>
-    <div class="qForm">
-        
+    <div class="title">
+        <h1 id="title">Join Course</h1>
+        <h1 id="titlel2"></h1>
+        <h2 id="subtitle">Please fill in the form to ask to join the course. <br>We will try to respond as quickly as possible</h2>
+    </div>
+    <div class="qForm" id="pageContent">
+        <div class="rcTextInputs">
+            <input type="text" name="titleInput" id="titleInput" onfocusout="updateTextSize();" onfocus="focusText('titleLabel');">
+                <label for="titleInput" id="titleLabel" style="font-size: 35px; position: absolute; top: 0px; color: black;">Title</label>
+        </div>
+        <label for="age" id="ageLabel">Age: </label>
+        <select name="age" id="age">
+            <option value="Below 14">Below 14</option>
+            <option value="14 - 18">14 - 18</option>
+            <option value="18 - 20">18 - 20</option>
+            <option value="20 - 24">20 - 24</option>
+            <option value="24 - 30">24 - 30</option>
+            <option value="30 - 35">30 - 35</option>
+            <option value="Above 30">Above 30</option>
+        </select>
+        <div class="requestContent">
+            <div class="rcbTitle">Why I want to join the course:</div>
+            <textarea name="requestContent" id="requestContent" class="requestContentInput"></textarea>
+        </div>
+        <button class="submitRequest" onclick="sendRequestAction();">Send Request</button>
     </div>
 </body>
 </html>

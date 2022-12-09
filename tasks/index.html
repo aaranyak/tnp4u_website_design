@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/specificActions/signOutOnAuthUpdate.js" type="module"></script>
+    <script src="/scripts/auth/signout.js" type="module"></script>
+    <script src="/scripts/specificActions/signOutAction.js"></script>
+    <script src="/scripts/db/checkIfActivated.js" type="module"></script>
+    <script src="/scripts/specificActions/redirectIfNotActivated.js" type="module"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <link rel="stylesheet" href="/styles/headers.css">
+    <link rel="stylesheet" href="/styles/tasks.css">
+    <script src="/scripts/pageControllers/tasksController.js" type="module"></script>
+    <script src="/scripts/analytics/analyticsDefault.js" type="module"></script>
+    <title>TNP4U - Tasks</title>
+</head>
+<body style="margin: 0px; overflow-x: hidden;">
+    <header>
+        <div class="mainHeader">
+            <span>
+                <a href="/requests/"><button>Requests</button></a>
+                <a href="/tasks/"><button>Tasks</button></a>
+                <a href="/chat/"><button>Chat</button></a>
+            </span>
+            <span style="position: absolute; right: 0;">
+                <button style="font-weight: bold;" onclick="signOutAction();">Sign Out</button>
+            </span>
+        </div>
+    </header>
+    <div class="backgrounds" id="backgrounds">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background1">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background2">
+    </div>
+    <div class="posts" id="posts">
+        <div class="title">
+            <h1 id="title">View tasks</h1>
+            <h2 id="subtitle">View all the task posts here.</h2>
+        </div>
+        <div class="postContainer">
+            <div class="post">
+                <div class="postTitle">
+                    Do Your Work: Mon 7'th Dec 2022
+                </div>
+                <hr>
+                <span style="display: inline;">
+                    <div class="postDescription">
+                        Eshy is a guinea pig adiv is a hamster a poonchy toonchy guinea pig so eshy is a nice friendly guinea pig he is my friend because he is my friend and we are friends.
+                    </div>
+                    <div class="content">
+                        <iframe width="300" height="200"  src="https://youtube.com/embed/jWvKAYKlnnM"></iframe>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="postContainer">
+            <div class="post">
+                <div class="postTitle">
+                    Do Your Work: Mon 7'th Dec 2022
+                </div>
+                <hr>
+                <span style="display: inline;">
+                    <div class="postDescription">
+                        Eshy is a guinea pig adiv is a hamster a poonchy toonchy guinea pig so eshy is a nice friendly guinea pig he is my friend because he is my friend and we are friends.
+                    </div>
+                    <div class="content">
+                        <a href="https://github.com">
+                            <div class="sheetsPage">
+                                <img src="/assets/icons/sheetsLogo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <script src="/scripts/specificActions/signOutOnAuthUpdate.js" type="module"></script>
+    <script src="/scripts/auth/signout.js" type="module"></script>
+    <script src="/scripts/specificActions/signOutAction.js"></script>
+    <script src="/scripts/db/checkIfActivated.js" type="module"></script>
+    <script src="/scripts/specificActions/redirectIfNotActivated.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/headers.css">
+    <link rel="stylesheet" href="/styles/chat.css">
+    <script src="/scripts/pageControllers/chatController.js" type="module"></script>
+    <script src="/scripts/db/sendChatMessage.js" type="module"></script>
+    <script src="/scripts/specificActions/sendMessageAction.js"></script>
+    <script src="/scripts/analytics/analyticsDefault.js" type="module"></script>
+    <title>TNP4U - Chat</title>
+</head>
+<body style="margin: 0px; overflow-x: hidden;">
+    <header>
+        <div class="mainHeader">
+            <span>
+                <a href="/requests/"><button>Requests</button></a>
+                <a href="/tasks/"><button>Tasks</button></a>
+                <a href="/chat/"><button>Chat</button></a>
+            </span>
+            <span style="position: absolute; right: 0;">
+                <button style="font-weight: bold;" onclick="signOutAction();">Sign Out</button>
+            </span>
+        </div>
+    </header>
+    <div class="backgrounds" id="backgrounds">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background1">
+        <img src="/assets/backgrounds/pageDecoration.svg" id="background2">
+    </div>
+    <div class="messages" id="messages">
+        <div class="title">
+            <h1 id="title">Chat With Us</h1>
+            <h1 id="titlel2"></h1>
+            <h2 id="subtitle">Use this page to chat with the us.</h2>
+        </div>
+    </div>
+    <div id="messageSender" class="messageSender">
+        <div class="sendMessage">
+            <textarea name="messageInput" id="messageInput" class="messageInput" placeholder="Type message..."></textarea>
+            <button class="sendMessageButton" onclick="sendMessageAction();">Send Message</button>
+    </div>
+</body>
+</html>

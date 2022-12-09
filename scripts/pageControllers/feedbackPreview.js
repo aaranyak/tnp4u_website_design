@@ -47,7 +47,7 @@ function generateReview(name, title, rating, timestamp, content) {
 }
 function generateReviews() {
     console.log("Blah")
-    getPreview().then((querySnapshot) => {
+    getPreview(3).then((querySnapshot) => {
         querySnapshot.forEach(doc => {
             var reviewData = doc.data()
             var review = generateReview(reviewData.username, reviewData.title, reviewData.rating, reviewData.date, reviewData.content);

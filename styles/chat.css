@@ -1,0 +1,121 @@
+#background1 {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 1500px;
+    margin: 0;
+}
+#background2 {
+    position: absolute;
+    height: 1500px;
+    right: 0px;
+    margin: 0;
+}
+.backgrounds {
+    margin: 0;
+}
+.messages {
+    position: absolute;
+    bottom: calc(100% - 1460px);
+    width: 100%;
+    height: auto;
+} 
+.messageContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;   
+    margin-top: 30px;
+}
+.userMessageBox {
+    display: block;
+    width: 300px;
+    position: relative;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    font-family: 'PT Serif';
+    font-size: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.507);
+    text-align: right;
+    right: calc(-100% + 650px);
+}
+.adminMessageBox {
+    display: block;
+    width: 300px;
+    position: relative;
+    height: fit-content;
+    background-color: #E8CDAD;
+    padding: 20px;
+    font-family: 'PT Serif';
+    font-size: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.507);
+    text-align: left;
+    left: 250px;
+}
+.title {
+    position: relative;
+    bottom: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    align-content: center;
+}
+.title h1 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 0px;
+    text-align: center;
+    color: #332020;
+}
+.title h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+}
+
+.messageInput {
+    position: relative;
+    top: 30px;
+    width: calc(100% - 300px);
+    resize: none;
+    left: 40px;
+    border: none;
+    outline: 0px;
+    font-size: 25px;
+    font-family: 'PT Serif';
+    background-color: transparent;
+}
+.sendMessage {
+    position: fixed;
+    bottom: 50px;
+    box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.678);
+    width: calc(100% - 80px);
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: transparent;
+}
+.sendMessageButton {
+    width: 150px;
+    height: 70px;
+    border: none;
+    font-size: 17px;
+    position: relative;
+    border-radius: 50px;
+    top: -15px;
+    font-family: 'PT Serif';
+    font-weight: normal;
+    background-color:#E8CDAD ;
+    color: #332020;
+    transition: 200ms;
+    margin: 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 50%);
+}
+.sendMessageButton:hover {
+    background-color: #947171;
+}

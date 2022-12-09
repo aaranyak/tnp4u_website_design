@@ -1,7 +1,8 @@
 import {app} from "/scripts/firebaseInit.js";
 import {getAuth} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+import {getAnalytics, logEvent} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
 import {getFirestore, getDocs, collection, addDoc, query, orderBy, Timestamp, limit} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
-
+const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 function getReviews() {
@@ -13,6 +14,11 @@ function getPreview(maxFeedback) {
     return getDocs(reviewsQuery);
 }
 function writeReview(name, title, rating, timestamp, content) {
+    logEvent(analytics, "post_review", {
+        username: name,
+        rating: rating,
+        title: title,
+    });
     return addDoc(collection(db, "reviews"), {
         username: name,
         title: title,
